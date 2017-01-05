@@ -1,0 +1,39 @@
+.content {
+    margin: 0 num(30);
+    .title {
+        font-size: num(30);
+        color: #666;
+        padding: num(40) 0 num(10) 0;
+    }
+    .item {
+        overflow: hidden;
+        margin: num(30) 0;
+        .logo {
+            width: num(120);
+            float: left;
+        }
+        .right {
+            overflow: hidden;
+            float: left;
+            width:num(640-60-120-20);
+            margin-left: num(20);
+            .p1 {
+                font-size: num(32);
+                color: #333;
+                margin-bottom: num(18);
+            }
+            .p2 {
+                font-size: num(24);
+                color: #999;
+                margin-bottom: num(10);
+            }
+            .p3 {
+                font-size: num(24);
+                color: #666;
+                overflow: hidden;
+                text-overflow:ellipsis;
+                white-space: nowrap;
+            }
+        }
+    }
+}

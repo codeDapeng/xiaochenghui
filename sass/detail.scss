@@ -1,0 +1,52 @@
+/*main*/
+
+@import "modules/main";
+
+/*title*/
+
+@import "modules/title";
+
+/*content*/
+
+@import "modules/content";
+.banner {
+    width: 100%;
+    overflow:auto;
+    .swiper-wrapper {
+        width: num(270*5);
+        margin: 0 num(30);
+        overflow: hidden;
+        .swiper-slide {
+            float: left;
+            img {
+                width: num(260);
+                margin-right: num(10);
+            }
+        }
+    }
+}
+.method{
+    font-size: num(28);
+    color: #333;
+    text-indent: num(28);
+    margin: num(40) 0 num(20) 0;
+}
+.ewm{
+    width: num(249);
+    margin-left: num(30);
+}
+article{
+    margin: num(40) num(30) 0;
+    border-top: 1px solid #ccc;
+    .title{
+        color: #333;
+        font-size: num(28);
+        margin: num(40) 0 num(20) 0;
+    }
+    .article{
+        font-size: num(24);
+        color: #666;
+        padding-bottom: num(30);
+        line-height: num(34);
+    }
+}

@@ -1,0 +1,100 @@
+/*main*/
+.colGreen {
+  color: #05af10 !important;
+}
+
+/*title*/
+#title {
+  background: #f7f7f7;
+  height: 12.5vw;
+  line-height: 12.5vw;
+  text-align: center;
+  color: #333;
+  font-size: 4.375vw;
+}
+
+/*content*/
+.content {
+  margin: 0 4.6875vw;
+}
+.content .title {
+  font-size: 4.6875vw;
+  color: #666;
+  padding: 6.25vw 0 1.5625vw 0;
+}
+.content .item {
+  overflow: hidden;
+  margin: 4.6875vw 0;
+}
+.content .item .logo {
+  width: 18.75vw;
+  float: left;
+}
+.content .item .right {
+  overflow: hidden;
+  float: left;
+  width: 68.75vw;
+  margin-left: 3.125vw;
+}
+.content .item .right .p1 {
+  font-size: 5vw;
+  color: #333;
+  margin-bottom: 2.8125vw;
+}
+.content .item .right .p2 {
+  font-size: 3.75vw;
+  color: #999;
+  margin-bottom: 1.5625vw;
+}
+.content .item .right .p3 {
+  font-size: 3.75vw;
+  color: #666;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.banner {
+  width: 100%;
+  overflow: auto;
+}
+.banner .swiper-wrapper {
+  width: 210.9375vw;
+  margin: 0 4.6875vw;
+  overflow: hidden;
+}
+.banner .swiper-wrapper .swiper-slide {
+  float: left;
+}
+.banner .swiper-wrapper .swiper-slide img {
+  width: 40.625vw;
+  margin-right: 1.5625vw;
+}
+
+.method {
+  font-size: 4.375vw;
+  color: #333;
+  text-indent: 4.375vw;
+  margin: 6.25vw 0 3.125vw 0;
+}
+
+.ewm {
+  width: 38.90625vw;
+  margin-left: 4.6875vw;
+}
+
+article {
+  margin: 6.25vw 4.6875vw 0;
+  border-top: 1px solid #ccc;
+}
+article .title {
+  color: #333;
+  font-size: 4.375vw;
+  margin: 6.25vw 0 3.125vw 0;
+}
+article .article {
+  font-size: 3.75vw;
+  color: #666;
+  padding-bottom: 4.6875vw;
+  line-height: 5.3125vw;
+}

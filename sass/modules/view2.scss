@@ -1,0 +1,19 @@
+#view2{
+    ul{
+        float: left;
+        width: 50%;
+
+        li{
+            color: #333;
+            font-size: num(28);
+            line-height: num(88);
+            border-bottom: 1px solid #eee;
+            img{
+                width: num(40);
+                float: left;
+                margin: num(24) num(30) num(0) num(60);
+            }
+
+        }
+    }
+}

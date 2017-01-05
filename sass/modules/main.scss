@@ -1,0 +1,8 @@
+@function num($num){
+    @return $num/640*100+vw;
+}
+$borderR:5px;
+$green:#05af10;
+.colGreen{
+    color: $green !important;
+}

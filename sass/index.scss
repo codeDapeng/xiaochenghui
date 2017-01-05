@@ -1,0 +1,19 @@
+/*main*/
+@import "modules/main";
+
+/*search*/
+@import "modules/search";
+/*nav*/
+@import "modules/nav";
+/*banner*/
+@import "modules/banner";
+/*content*/
+@import "modules/content";
+/*content*/
+@import "modules/view2";
+
+
+.bar{
+    background: #eee;
+    height: num(10);
+}
