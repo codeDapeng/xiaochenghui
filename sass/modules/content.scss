@@ -19,8 +19,15 @@
             margin-left: num(20);
             .p1 {
                 font-size: num(32);
+                line-height: num(32);
                 color: #333;
                 margin-bottom: num(18);
+                .date{
+                    font-size: num(18);
+                    float: right;
+                    color: #999;
+                    margin-right: num(20);
+                }
             }
             .p2 {
                 font-size: num(24);
