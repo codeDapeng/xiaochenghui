@@ -116,6 +116,9 @@
 }
 
 /*content*/
+#view2 {
+  display: none;
+}
 #view2 ul {
   float: left;
   width: 50%;
