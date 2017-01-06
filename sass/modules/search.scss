@@ -4,6 +4,7 @@
     height: num(120);
     background: $green;
     overflow: hidden;
+    line-height: num(120);
     #searchContainer{
         float: left;
         background: #fff;
@@ -23,6 +24,7 @@
             margin-top: num(20);
             border: none;
             text-indent: num(28);
+            font-size: num(28);
         }
     }
     .ss{
@@ -30,5 +32,12 @@
         width: num(48);
         margin-left: num(31);
         margin-top: num(35);
+    }
+    .cancel{
+        float: left;
+        color: #fff;
+        margin-left: num(30);
+        font-size: num(24);
+        display: none;
     }
 }

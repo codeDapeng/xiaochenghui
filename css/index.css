@@ -8,6 +8,7 @@
   height: 18.75vw;
   background: #05af10;
   overflow: hidden;
+  line-height: 18.75vw;
 }
 #searchModule #searchContainer {
   float: left;
@@ -29,12 +30,20 @@
   margin-top: 3.125vw;
   border: none;
   text-indent: 4.375vw;
+  font-size: 4.375vw;
 }
 #searchModule .ss {
   float: left;
   width: 7.5vw;
   margin-left: 4.84375vw;
   margin-top: 5.46875vw;
+}
+#searchModule .cancel {
+  float: left;
+  color: #fff;
+  margin-left: 4.6875vw;
+  font-size: 3.75vw;
+  display: none;
 }
 
 /*nav*/

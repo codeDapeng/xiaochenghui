@@ -21,6 +21,7 @@
             <input class="search" type="text" placeholder="输入小程序关键字">
         </div>
         <img class="ss" src="img/ss.png" alt="">
+        <span class="cancel">取消</span>
     </div>
     <!--nav-->
     <ul id="nav">
@@ -116,63 +117,74 @@
         <ul style="border-right:1px solid #eee;box-sizing: border-box;">
             <a href="">
                 <li>
-                    <img src="img/icon.jpg" alt="">
-                    分类名称
+                    <img src="img/icon.jpg" alt=""> 分类名称
                 </li>
             </a>
             <a href="">
                 <li>
-                    <img src="img/icon.jpg" alt="">
-                    分类名称
+                    <img src="img/icon.jpg" alt=""> 分类名称
                 </li>
             </a>
             <a href="">
                 <li>
-                    <img src="img/icon.jpg" alt="">
-                    分类名称
+                    <img src="img/icon.jpg" alt=""> 分类名称
                 </li>
             </a>
         </ul>
         <ul>
             <a href="">
                 <li>
-                    <img src="img/icon.jpg" alt="">
-                    分类名称
+                    <img src="img/icon.jpg" alt=""> 分类名称
                 </li>
             </a>
             <a href="">
                 <li>
-                    <img src="img/icon.jpg" alt="">
-                    分类名称
+                    <img src="img/icon.jpg" alt=""> 分类名称
                 </li>
             </a>
             <a href="">
                 <li>
-                    <img src="img/icon.jpg" alt="">
-                    分类名称
+                    <img src="img/icon.jpg" alt=""> 分类名称
                 </li>
             </a>
         </ul>
     </div>
     <script>
+        //search搜索框
+        $('#searchContainer .search').focusin(function(){
+            $('.ss').css({
+                display:'none'
+            });
+            $('.cancel').css({
+                display:'block'
+            });
+        });
+        $('#searchContainer .search').focusout(function(){
+            $('.ss').css({
+                display:'block'
+            });
+            $('.cancel').css({
+                display:'none'
+            });
+        });
         //nav切换
         $('#nav li').on('click', function () {
             $('#nav li').removeClass('colGreen');
             $(this).addClass('colGreen');
-//            alert($(this).index())
-            if($(this).index()==0){
+            //            alert($(this).index())
+            if ($(this).index() == 0) {
                 $('#view1').css({
-                    display:'block'
+                    display: 'block'
                 });
-                 $('#view2').css({
-                    display:'none'
+                $('#view2').css({
+                    display: 'none'
                 });
-            }else{
+            } else {
                 $('#view1').css({
-                    display:'none'
+                    display: 'none'
                 });
-                 $('#view2').css({
-                    display:'block'
+                $('#view2').css({
+                    display: 'block'
                 });
             }
         });
