@@ -33,6 +33,9 @@
                 font-size: num(24);
                 color: #999;
                 margin-bottom: num(10);
+                overflow: hidden;
+                text-overflow:ellipsis;
+                white-space: nowrap;
             }
             .p3 {
                 font-size: num(24);
