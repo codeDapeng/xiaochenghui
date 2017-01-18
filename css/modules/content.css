@@ -1,0 +1,49 @@
+.content {
+  margin: 0 num(30);
+}
+.content .title {
+  font-size: num(30);
+  color: #666;
+  padding: num(40) 0 num(10) 0;
+}
+.content .item {
+  overflow: hidden;
+  margin: num(30) 0;
+}
+.content .item .logo {
+  width: num(120);
+  float: left;
+}
+.content .item .right {
+  overflow: hidden;
+  float: left;
+  width: num(440);
+  margin-left: num(20);
+}
+.content .item .right .p1 {
+  font-size: num(32);
+  line-height: num(32);
+  color: #333;
+  margin-bottom: num(18);
+}
+.content .item .right .p1 .date {
+  font-size: num(18);
+  float: right;
+  color: #999;
+  margin-right: num(20);
+}
+.content .item .right .p2 {
+  font-size: num(24);
+  color: #999;
+  margin-bottom: num(10);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.content .item .right .p3 {
+  font-size: num(24);
+  color: #666;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

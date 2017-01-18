@@ -3,6 +3,16 @@
   color: #05af10 !important;
 }
 
+.click-bottom {
+  text-align: center;
+  line-height: 10vw;
+  margin-bottom: 30vw;
+}
+
+.click-bottom img {
+  display: none;
+}
+
 /*search*/
 #searchModule {
   height: 18.75vw;
@@ -106,6 +116,9 @@
   font-size: 3.75vw;
   color: #999;
   margin-bottom: 1.5625vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .content .item .right .p3 {
   font-size: 3.75vw;

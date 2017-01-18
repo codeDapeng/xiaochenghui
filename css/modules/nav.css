@@ -1,0 +1,11 @@
+#nav {
+  overflow: hidden;
+}
+#nav li {
+  float: left;
+  font-size: num(32);
+  line-height: num(100);
+  color: #333;
+  width: 50%;
+  text-align: center;
+}
