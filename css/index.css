@@ -25,6 +25,7 @@
   background: #fff;
   width: 78.125vw;
   height: 10.625vw;
+  line-height: 10.625vw;
   margin-top: 4.0625vw;
   margin-left: 4.6875vw;
   border-radius: 5px;
@@ -41,6 +42,9 @@
   border: none;
   text-indent: 4.375vw;
   font-size: 4.375vw;
+  line-height: 4.375vw;
+  height: 4.375vw;
+  width: 46.875vw;
 }
 #searchModule .ss {
   float: left;

@@ -10,6 +10,7 @@
         background: #fff;
         width: num(500);
         height: num(68);
+        line-height: num(68);
         margin-top: num(26);
         margin-left: num(30);
         border-radius: $borderR;
@@ -25,6 +26,9 @@
             border: none;
             text-indent: num(28);
             font-size: num(28);
+            line-height: num(28);
+            height: num(28);
+            width: num(300);
         }
     }
     .ss{

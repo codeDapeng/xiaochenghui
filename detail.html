@@ -7,10 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/detail.css">
-<!--    <link rel="stylesheet" href="css/swiper-3.3.1.min.css">-->
+    <!--    <link rel="stylesheet" href="css/swiper-3.3.1.min.css">-->
+    <link rel="stylesheet" href="css/common.css">
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/flexible.min.js"></script>
-<!--    <script src="js/swiper-3.3.1.min.js"></script>-->
+    <!--    <script src="js/jquery-zclip-master/jquery.zclip.js"></script>-->
+    <!--    <script src="js/swiper-3.3.1.min.js"><
+
+    /script>-->
+    <script src="js/clipboard.min.js"></script>
+    <script type="text/javascript" src="js/alertPopShow.js"></script>
 </head>
 
 <body>
@@ -19,7 +25,7 @@
         <div class="item">
             <img class="logo" src="img/item.jpg" alt="">
             <div class="right">
-                <p class="p1">欢乐斗地主</p>
+                <p class="p1" id="copyTarget">欢乐斗地主</p>
                 <p class="p2">类别/类别/类别</p>
                 <p class="p3">数字娱乐 丨 Young.yang</p>
             </div>
@@ -41,12 +47,32 @@
     </div>
     <p class="method">下载方式</p>
     <img class="ewm" src="img/ewm.jpg" alt="">
-    <p style="color:#f25454;text-indent:4.375vw;font-size:3.75vw;margin-top:2vw;">长按识别二维别安装</p>
+    <p style="color:#f25454;text-indent:4.375vw;font-size:3.75vw;margin-top:2vw;">长按识别二维别安装,点击按钮复制小程序名称。</p>
+    <button data-clipboard-action="copy" data-clipboard-target="#copyTarget" style="width:20vw;height:8vw;margin-left:5vw;margin-top:5vw" id="copy">copy</button>
+
     <article>
         <p class="title">应用介绍</p>
         <p class="article">快看漫画，体验超好的漫画神器。超快的更新上架速度，为你提供超新的精神食粮；超高清的全彩画面，让你体验到绝妙的视觉享受。</p>
     </article>
+
     <script>
+        /*$('#copy').zclip({
+                    path: 'js/jquery-zclip-master/ZeroClipboard.swf',
+                    copy: function () { //复制内容
+                        return $('.content .p1').html();
+                    },
+                    afterCopy: function () { //复制成功
+                        alert("复制成功")
+                    }
+                });*/
+        var clipboard = new Clipboard('#copy');
+        clipboard.on('success', function (e) {
+            console.info('Action:', e.action);
+            console.info('Text:', e.text);
+            console.info('Trigger:', e.trigger);
+            e.clearSelection();
+            webToast("复制成功，请到小程序中搜索安装。", "top", 2500);
+        });
 
     </script>
 </body>
